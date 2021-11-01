@@ -8,7 +8,7 @@ body {
 }
 
 #container {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 /* Main Content Styling */
-#main_content{
+#main_content {
     margin-bottom: 7px;
 }
 
@@ -105,9 +105,25 @@ body {
 }
 
 /* Footer */
-#footer{
+#footer {
     padding: 5px 0;
     text-align: center;
     background: #333;
     color: white;
+}
+
+
+
+
+@media ( max-width: 480px ) {
+    
+   #left_content{
+       display: none;
+   }
+
+   #right_content{
+       width: 100%;
+       margin-left: 0;
+   }
+
 }
